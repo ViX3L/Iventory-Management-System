@@ -21,5 +21,15 @@ namespace Assignment___Inventory
         {
 
         }
+
+        private void usernameTextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

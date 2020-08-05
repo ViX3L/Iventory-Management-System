@@ -35,6 +35,7 @@
             this.usernameTextbox = new System.Windows.Forms.TextBox();
             this.passwordTextbox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.userPassTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,6 +98,7 @@
             this.usernameTextbox.Name = "usernameTextbox";
             this.usernameTextbox.Size = new System.Drawing.Size(326, 34);
             this.usernameTextbox.TabIndex = 2;
+            this.usernameTextbox.TextChanged += new System.EventHandler(this.usernameTextbox_TextChanged);
             // 
             // passwordTextbox
             // 
@@ -111,8 +113,8 @@
             // 
             // loginButton
             // 
-            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.Location = new System.Drawing.Point(335, 346);
+            this.loginButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.Location = new System.Drawing.Point(448, 354);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(102, 45);
             this.loginButton.TabIndex = 2;
@@ -120,17 +122,32 @@
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.button1_Click);
             // 
+            // exitButton
+            // 
+            this.exitButton.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Location = new System.Drawing.Point(238, 354);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(102, 45);
+            this.exitButton.TabIndex = 3;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
             // adminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(777, 468);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.userPassTableLayoutPanel);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "adminForm";
-            this.Text = "Admin Panel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login Panel";
             this.userPassTableLayoutPanel.ResumeLayout(false);
             this.userPassTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -147,6 +164,7 @@
         private System.Windows.Forms.TextBox usernameTextbox;
         private System.Windows.Forms.TextBox passwordTextbox;
         private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 
