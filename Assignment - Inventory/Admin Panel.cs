@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Assignment___Inventory
 {
-    public partial class Form1 : Form
+    public partial class adminForm : Form
     {
-        public Form1()
+        public adminForm()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

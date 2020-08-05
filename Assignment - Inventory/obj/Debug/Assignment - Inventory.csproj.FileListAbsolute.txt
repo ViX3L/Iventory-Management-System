@@ -1,0 +1,10 @@
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\Assignment - Inventory.exe.config
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\Assignment - Inventory.exe
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\Assignment - Inventory.pdb
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment - Inventory.csprojAssemblyReference.cache
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.adminForm.resources
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.Properties.Resources.resources
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment - Inventory.csproj.GenerateResource.cache
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment - Inventory.csproj.CoreCompileInputs.cache
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment - Inventory.exe
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment - Inventory.pdb
