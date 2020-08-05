@@ -1,2 +1,4 @@
-# Assignment - Inventory
- Windows Programing C#
+# Assignment 
+# Inventory Management System
+ Windows Programing - C# - Microsoft SQL Server
+ 
