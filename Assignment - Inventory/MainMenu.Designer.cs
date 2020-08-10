@@ -40,8 +40,6 @@
             this.totalstockTextbox = new System.Windows.Forms.TextBox();
             this.itemsoldLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.itemcomboBox = new System.Windows.Forms.ComboBox();
-            this.selectLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +71,7 @@
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
             this.productToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
             this.productToolStripMenuItem.Text = "Add Product";
+            this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // updateToolStripMenuItem
             // 
@@ -111,7 +110,7 @@
             // 
             this.totalStockLabel.AutoSize = true;
             this.totalStockLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalStockLabel.Location = new System.Drawing.Point(61, 51);
+            this.totalStockLabel.Location = new System.Drawing.Point(71, 51);
             this.totalStockLabel.Name = "totalStockLabel";
             this.totalStockLabel.Size = new System.Drawing.Size(103, 20);
             this.totalStockLabel.TabIndex = 1;
@@ -121,7 +120,7 @@
             // totalstockTextbox
             // 
             this.totalstockTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalstockTextbox.Location = new System.Drawing.Point(180, 48);
+            this.totalstockTextbox.Location = new System.Drawing.Point(202, 48);
             this.totalstockTextbox.Name = "totalstockTextbox";
             this.totalstockTextbox.Size = new System.Drawing.Size(127, 27);
             this.totalstockTextbox.TabIndex = 2;
@@ -130,7 +129,7 @@
             // 
             this.itemsoldLabel.AutoSize = true;
             this.itemsoldLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemsoldLabel.Location = new System.Drawing.Point(28, 92);
+            this.itemsoldLabel.Location = new System.Drawing.Point(38, 92);
             this.itemsoldLabel.Name = "itemsoldLabel";
             this.itemsoldLabel.Size = new System.Drawing.Size(136, 20);
             this.itemsoldLabel.TabIndex = 3;
@@ -139,42 +138,16 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(180, 92);
+            this.textBox1.Location = new System.Drawing.Point(202, 92);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(127, 27);
             this.textBox1.TabIndex = 4;
-            // 
-            // itemcomboBox
-            // 
-            this.itemcomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemcomboBox.FormattingEnabled = true;
-            this.itemcomboBox.Items.AddRange(new object[] {
-            "Gaming Gear",
-            "System & Accessories",
-            "PC Hardware"});
-            this.itemcomboBox.Location = new System.Drawing.Point(180, 134);
-            this.itemcomboBox.Name = "itemcomboBox";
-            this.itemcomboBox.Size = new System.Drawing.Size(259, 28);
-            this.itemcomboBox.TabIndex = 5;
-            this.itemcomboBox.Tag = "select";
-            // 
-            // selectLabel
-            // 
-            this.selectLabel.AutoSize = true;
-            this.selectLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectLabel.Location = new System.Drawing.Point(13, 137);
-            this.selectLabel.Name = "selectLabel";
-            this.selectLabel.Size = new System.Drawing.Size(146, 20);
-            this.selectLabel.TabIndex = 6;
-            this.selectLabel.Text = "Choose Periphals:";
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.selectLabel);
-            this.Controls.Add(this.itemcomboBox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.itemsoldLabel);
             this.Controls.Add(this.totalstockTextbox);
@@ -206,7 +179,5 @@
         private System.Windows.Forms.TextBox totalstockTextbox;
         private System.Windows.Forms.Label itemsoldLabel;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox itemcomboBox;
-        private System.Windows.Forms.Label selectLabel;
     }
 }

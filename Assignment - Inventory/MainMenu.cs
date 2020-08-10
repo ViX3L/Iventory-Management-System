@@ -18,5 +18,12 @@ namespace Assignment___Inventory
         {
 
         }
+
+        private void productToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            AddItem addProduct = new AddItem();
+            addProduct.Show();
+            this.Hide();
+        }
     }
 }
