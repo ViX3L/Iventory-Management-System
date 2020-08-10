@@ -45,6 +45,8 @@
             this.backButton = new System.Windows.Forms.Button();
             this.categoryLabel = new System.Windows.Forms.Label();
             this.categoryComboBox = new System.Windows.Forms.ComboBox();
+            this.updateButton = new System.Windows.Forms.Button();
+            this.delButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataViewAddItem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,7 +163,7 @@
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(193, 470);
+            this.addButton.Location = new System.Drawing.Point(50, 461);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(99, 46);
             this.addButton.TabIndex = 12;
@@ -178,12 +180,13 @@
             this.dataViewAddItem.RowTemplate.Height = 24;
             this.dataViewAddItem.Size = new System.Drawing.Size(631, 462);
             this.dataViewAddItem.TabIndex = 13;
+            this.dataViewAddItem.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataViewAddItem_CellDoubleClick);
             // 
             // backButton
             // 
             this.backButton.AutoSize = true;
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(398, 470);
+            this.backButton.Location = new System.Drawing.Point(222, 524);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(100, 46);
             this.backButton.TabIndex = 14;
@@ -217,11 +220,37 @@
             this.categoryComboBox.Size = new System.Drawing.Size(305, 28);
             this.categoryComboBox.TabIndex = 16;
             // 
+            // updateButton
+            // 
+            this.updateButton.AutoSize = true;
+            this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateButton.Location = new System.Drawing.Point(222, 461);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(100, 46);
+            this.updateButton.TabIndex = 17;
+            this.updateButton.Text = "Update";
+            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
+            // 
+            // delButton
+            // 
+            this.delButton.AutoSize = true;
+            this.delButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delButton.Location = new System.Drawing.Point(398, 461);
+            this.delButton.Name = "delButton";
+            this.delButton.Size = new System.Drawing.Size(100, 46);
+            this.delButton.TabIndex = 18;
+            this.delButton.Text = "Delete";
+            this.delButton.UseVisualStyleBackColor = true;
+            this.delButton.Click += new System.EventHandler(this.delButton_Click);
+            // 
             // AddItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1210, 582);
+            this.Controls.Add(this.delButton);
+            this.Controls.Add(this.updateButton);
             this.Controls.Add(this.categoryComboBox);
             this.Controls.Add(this.categoryLabel);
             this.Controls.Add(this.backButton);
@@ -242,7 +271,8 @@
             this.MaximizeBox = false;
             this.Name = "AddItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddItem";
+            this.Text = "Add / Update / Delete Item";
+            this.Load += new System.EventHandler(this.AddItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataViewAddItem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -268,5 +298,7 @@
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Label categoryLabel;
         private System.Windows.Forms.ComboBox categoryComboBox;
+        private System.Windows.Forms.Button updateButton;
+        private System.Windows.Forms.Button delButton;
     }
 }
