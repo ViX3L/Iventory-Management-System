@@ -25,5 +25,7 @@ namespace Assignment___Inventory
             addProduct.Show();
             this.Hide();
         }
+
+        
     }
 }

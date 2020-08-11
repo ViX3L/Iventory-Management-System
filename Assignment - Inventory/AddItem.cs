@@ -45,6 +45,7 @@ namespace Assignment___Inventory
             MessageBox.Show("Data successfully entered into the Database", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
             sqlcon.Close();
             clearData();
+
             displayData();
         }
         public void displayData() 
@@ -85,13 +86,19 @@ namespace Assignment___Inventory
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            sqlcon.Open();
-            cmd = new SqlCommand("update ProductTable set Product_Name='" + additemTextbox.Text +"', Category='"+ categoryComboBox.Text +"', Brand='"+brandTextbox.Text+"', Quantity='"+qtyTextbox.Text+"', Supplier_Price='"+spTextbox.Text+"', Cust_Price='"+cpTextbox.Text+"', Description='"+despTextbox.Text+"' ", sqlcon);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Information Updated in Database!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            sqlcon.Close();
-            clearData();
-            displayData();
+         
+                
+                cmd = new SqlCommand("update ProductTable set Product_Name='" + additemTextbox.Text + "', Category='" + categoryComboBox.Text + "', Brand='" + brandTextbox.Text + "', Quantity='" + qtyTextbox.Text + "', Supplier_Price='" + spTextbox.Text + "', Cust_Price='" + cpTextbox.Text + "', Description='" + despTextbox.Text + "'where Product_ID='"+product_id+"' ", sqlcon);
+                sqlcon.Open();
+                
+                
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Information Updated in Database!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                sqlcon.Close();
+                
+                displayData();
+                clearData();
+            
 
         }
 
@@ -117,5 +124,9 @@ namespace Assignment___Inventory
             despTextbox.Clear(); 
 
         }
+
+        
+
+       
     }
 }

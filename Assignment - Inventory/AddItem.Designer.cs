@@ -180,7 +180,9 @@
             this.dataViewAddItem.RowTemplate.Height = 24;
             this.dataViewAddItem.Size = new System.Drawing.Size(631, 462);
             this.dataViewAddItem.TabIndex = 13;
+            
             this.dataViewAddItem.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataViewAddItem_CellDoubleClick);
+            
             // 
             // backButton
             // 

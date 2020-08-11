@@ -150,6 +150,7 @@
             this.Name = "adminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Panel";
+            
             this.userPassTableLayoutPanel.ResumeLayout(false);
             this.userPassTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);

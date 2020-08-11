@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.ReportingServices.Diagnostics.Internal;
+using System;
 using System.Windows.Forms;
 
 namespace Assignment___Inventory
@@ -7,13 +8,16 @@ namespace Assignment___Inventory
     {
         /// <summary>
         /// The main entry point for the application.
-        /// </summary>
         [STAThread]
+
+        
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new adminForm());
+            Application.Run(new MainMenu());
         }
+
+        
     }
 }
