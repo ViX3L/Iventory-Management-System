@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Assignment___Inventory
 {
-    public partial class PurchaseReport : Form
+    public partial class InventoryReport : Form
     {
-        public PurchaseReport()
+        public InventoryReport()
         {
             InitializeComponent();
         }

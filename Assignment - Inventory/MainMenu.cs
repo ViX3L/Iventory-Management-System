@@ -26,6 +26,14 @@ namespace Assignment___Inventory
             this.Hide();
         }
 
-        
+        private void purchaseToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            
+            InventoryReport inv = new InventoryReport();
+            inv.Show();
+            this.Hide();
+            
+
+        }
     }
 }

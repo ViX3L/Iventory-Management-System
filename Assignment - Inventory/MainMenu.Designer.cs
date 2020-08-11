@@ -82,8 +82,8 @@
             // 
             this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
             this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.purchaseToolStripMenuItem.Text = "Purchase";
-            
+            this.purchaseToolStripMenuItem.Text = "Inventory";
+            this.purchaseToolStripMenuItem.Click += new System.EventHandler(this.purchaseToolStripMenuItem_Click);
             // 
             // totalStockLabel
             // 
