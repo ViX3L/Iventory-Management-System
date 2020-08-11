@@ -126,6 +126,7 @@ namespace Assignment___Inventory
         {
             // Clears code after each process of add / update / delete is done.
             additemTextbox.Clear();
+            categoryComboBox.Text=" ";
             brandTextbox.Clear();
             qtyTextbox.Clear();
             spTextbox.Clear();
