@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace Assignment___Inventory
 {
     public partial class AddItem : Form
@@ -22,6 +23,7 @@ namespace Assignment___Inventory
 
         public AddItem()
         {
+            // Connect Database to store data
             sqlcon.ConnectionString = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\USERS\ASADU\DOCUMENTS\GITHUB\ASSIGNMENT---INVENTORY\ASSIGNMENT - INVENTORY\DATABASE\DATABASE\DATABASE.MDF;Integrated Security=True;Connect Timeout=30");
 
             InitializeComponent();
@@ -35,6 +37,7 @@ namespace Assignment___Inventory
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            // Add item code
             string category = "";
             if (categoryComboBox.SelectedIndex >= 0)
                 category = categoryComboBox.Items[categoryComboBox.SelectedIndex].ToString();
@@ -45,11 +48,14 @@ namespace Assignment___Inventory
             MessageBox.Show("Data successfully entered into the Database", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
             sqlcon.Close();
             clearData();
-
             displayData();
+
+            
+
         }
         public void displayData() 
         {
+            // Code to display data on Data Dashboard.
             sqlcon.Open();
             sda = new SqlDataAdapter("Select * from ProductTable", sqlcon);
             dtbl = new DataTable();
@@ -60,6 +66,7 @@ namespace Assignment___Inventory
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            //Gets back to Main Menu panel.
             this.Hide();
             MainMenu mm = new MainMenu();
             mm.Show();
@@ -72,6 +79,7 @@ namespace Assignment___Inventory
 
         private void dataViewAddItem_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Specify the Data view, to show data on Data Dashboard.
             product_id = Convert.ToInt32(dataViewAddItem.Rows[e.RowIndex].Cells[0].Value.ToString());
             additemTextbox.Text = dataViewAddItem.Rows[e.RowIndex].Cells[1].Value.ToString();
             categoryComboBox.Text = dataViewAddItem.Rows[e.RowIndex].Cells[2].Value.ToString();
@@ -87,7 +95,7 @@ namespace Assignment___Inventory
         private void updateButton_Click(object sender, EventArgs e)
         {
          
-                
+                // Update Items Code.
                 cmd = new SqlCommand("update ProductTable set Product_Name='" + additemTextbox.Text + "', Category='" + categoryComboBox.Text + "', Brand='" + brandTextbox.Text + "', Quantity='" + qtyTextbox.Text + "', Supplier_Price='" + spTextbox.Text + "', Cust_Price='" + cpTextbox.Text + "', Description='" + despTextbox.Text + "'where Product_ID='"+product_id+"' ", sqlcon);
                 sqlcon.Open();
                 
@@ -95,7 +103,6 @@ namespace Assignment___Inventory
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Information Updated in Database!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 sqlcon.Close();
-                
                 displayData();
                 clearData();
             
@@ -104,6 +111,7 @@ namespace Assignment___Inventory
 
         private void delButton_Click(object sender, EventArgs e)
         {
+            //Delete Items Code.
             sqlcon.Open();
             cmd = new SqlCommand("delete from ProductTable where Product_ID='" + product_id + "'", sqlcon);
             cmd.ExecuteNonQuery();
@@ -116,6 +124,7 @@ namespace Assignment___Inventory
         }
         public void clearData()
         {
+            // Clears code after each process of add / update / delete is done.
             additemTextbox.Clear();
             brandTextbox.Clear();
             qtyTextbox.Clear();
@@ -126,7 +135,5 @@ namespace Assignment___Inventory
         }
 
         
-
-       
     }
 }

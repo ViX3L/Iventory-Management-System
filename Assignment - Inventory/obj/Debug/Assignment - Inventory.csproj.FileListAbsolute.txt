@@ -72,3 +72,4 @@ C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\ob
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\RdlCompile.compiled
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment - Inventory.csproj.CopyComplete
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.InventoryReport.resources
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.sellitem.resources

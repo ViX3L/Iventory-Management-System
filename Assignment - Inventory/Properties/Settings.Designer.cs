@@ -26,8 +26,9 @@ namespace Assignment___Inventory.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database\\Data" +
-            "base\\Database.mdf;Integrated Security=True;Connect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\USERS\\ASADU\\DOCUMENTS\\GITH" +
+            "UB\\ASSIGNMENT---INVENTORY\\ASSIGNMENT - INVENTORY\\DATABASE\\DATABASE\\DATABASE.MDF;" +
+            "Integrated Security=True;Connect Timeout=30")]
         public string DatabaseConnectionString {
             get {
                 return ((string)(this["DatabaseConnectionString"]));

@@ -23,6 +23,27 @@ namespace Assignment___Inventory
             this.ProductTableTableAdapter.Fill(this.DataSet.ProductTable);
 
             this.reportViewer1.RefreshReport();
+            this.reportViewer1.PerformBack();
+
+           
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void gobackButton_Click(object sender, EventArgs e)
+        {
+            //Gets back to Main Menu panel.
+            this.Hide();
+            MainMenu mm = new MainMenu();
+            mm.Show();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

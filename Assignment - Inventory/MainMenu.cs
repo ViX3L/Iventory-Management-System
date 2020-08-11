@@ -35,5 +35,18 @@ namespace Assignment___Inventory
             
 
         }
+
+        private void exitButton_Click(object sender, System.EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void sellItemToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            sellitem sell = new sellitem();
+            sell.Show();
+            this.Hide();
+
+        }
     }
 }
