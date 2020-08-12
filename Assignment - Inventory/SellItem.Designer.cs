@@ -45,6 +45,8 @@
             this.warrTextbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.saveButton = new System.Windows.Forms.Button();
+            this.tpriceTextbox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // itemSelectLabel
@@ -84,11 +86,12 @@
             this.quanTextbox.Name = "quanTextbox";
             this.quanTextbox.Size = new System.Drawing.Size(275, 27);
             this.quanTextbox.TabIndex = 3;
+            this.quanTextbox.TextChanged += new System.EventHandler(this.quanTextbox_TextChanged);
             // 
             // sellButton
             // 
             this.sellButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sellButton.Location = new System.Drawing.Point(210, 406);
+            this.sellButton.Location = new System.Drawing.Point(205, 449);
             this.sellButton.Name = "sellButton";
             this.sellButton.Size = new System.Drawing.Size(104, 46);
             this.sellButton.TabIndex = 4;
@@ -100,7 +103,7 @@
             // 
             this.backButton.AutoSize = true;
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(78, 406);
+            this.backButton.Location = new System.Drawing.Point(73, 449);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(100, 46);
             this.backButton.TabIndex = 15;
@@ -158,9 +161,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(33, 221);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 20);
+            this.label3.Size = new System.Drawing.Size(140, 20);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Price: ";
+            this.label3.Text = "Price Per Unit: ";
             // 
             // despTextbox
             // 
@@ -201,7 +204,7 @@
             // saveButton
             // 
             this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.Location = new System.Drawing.Point(346, 407);
+            this.saveButton.Location = new System.Drawing.Point(341, 450);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(145, 46);
             this.saveButton.TabIndex = 26;
@@ -209,12 +212,33 @@
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
+            // tpriceTextbox
+            // 
+            this.tpriceTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tpriceTextbox.Location = new System.Drawing.Point(236, 356);
+            this.tpriceTextbox.Name = "tpriceTextbox";
+            this.tpriceTextbox.Size = new System.Drawing.Size(275, 27);
+            this.tpriceTextbox.TabIndex = 28;
+            this.tpriceTextbox.TextChanged += new System.EventHandler(this.tpriceTextbox_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(33, 359);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(113, 20);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Total Price: ";
+            // 
             // sellitem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(552, 474);
+            this.ClientSize = new System.Drawing.Size(552, 527);
+            this.Controls.Add(this.tpriceTextbox);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.warrTextbox);
             this.Controls.Add(this.label5);
@@ -260,5 +284,7 @@
         private System.Windows.Forms.TextBox warrTextbox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.TextBox tpriceTextbox;
+        private System.Windows.Forms.Label label6;
     }
 }
