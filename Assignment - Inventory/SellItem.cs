@@ -135,7 +135,7 @@ namespace Assignment___Inventory
             cmd = new SqlCommand("Select * from  SaleTable set SalePrice= '" + custPriceTextbox.Text + "' ", sqlcon);
             try
             {
-                tpriceTextbox.Text = (float.Parse(quanTextbox.Text) * float.Parse(custPriceTextbox.Text)).ToString();
+                tpriceTextbox.Text = (float.Parse(quanTextbox.Text.Trim()) * float.Parse(custPriceTextbox.Text.Trim())).ToString();
             }
             catch (Exception ex)
             {
