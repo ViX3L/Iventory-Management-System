@@ -25,7 +25,8 @@ namespace Assignment___Inventory
             this.reportViewer1.RefreshReport();
             this.reportViewer1.PerformBack();
 
-           
+
+            
         }
 
         private void reportViewer1_Load(object sender, EventArgs e)

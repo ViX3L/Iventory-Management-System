@@ -33,6 +33,7 @@ namespace Assignment___Inventory
 
         void FillitemComboBox() {
 
+            // Code to get Product nAME
             String constring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\USERS\ASADU\DOCUMENTS\GITHUB\ASSIGNMENT---INVENTORY\ASSIGNMENT - INVENTORY\DATABASE\DATABASE\DATABASE.MDF;Integrated Security=True;Connect Timeout=30";
             String Query =  "select * from ProductTable ;";
             SqlConnection sqlcon = new SqlConnection(constring);
@@ -85,10 +86,6 @@ namespace Assignment___Inventory
             cmd.ExecuteNonQuery();
             MessageBox.Show("Product Sold", "Sale", MessageBoxButtons.OK, MessageBoxIcon.Information);
             sqlcon.Close();
-
-
-
-
         }
         
 
@@ -106,6 +103,37 @@ namespace Assignment___Inventory
             this.Hide();
             MainMenu mm = new MainMenu();
             mm.Show();
+        }
+
+        private void itemComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            sqlcon.Open();
+            sda = new SqlDataAdapter("Select * from ProductTable where Product_name ='"+ itemComboBox.SelectedItem.ToString()+ "' ", sqlcon);
+            dtbl = new DataTable();
+            sda.Fill(dtbl);
+            foreach (DataRow dr in dtbl.Rows)
+            {
+                brandTextbox.Text = dr["Brand"].ToString();
+                catTextbox.Text = dr["Category"].ToString();
+                despTextbox.Text = dr["Description"].ToString();
+
+            }
+            sqlcon.Close();
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            string category = "";
+            if (itemComboBox.SelectedIndex >= 0)
+                category = itemComboBox.Items[itemComboBox.SelectedIndex].ToString();
+            sqlcon.Open();
+            string c = ("Insert into SaleTable values('" + category + "','" + quanTextbox.Text + "','" + brandTextbox.Text.Trim() + "', '" + catTextbox.Text + "','"+ custPriceTextbox.Text.Trim() + "',  '" + despTextbox.Text.Trim() + "', '" + warrTextbox.Text.Trim() + "')");
+            SqlCommand cmd = new SqlCommand(c, sqlcon);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Data successfully entered into the Database", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            sqlcon.Close();
+            
+            displayData();
         }
     }
 }
