@@ -48,5 +48,10 @@ namespace Assignment___Inventory
             this.Hide();
 
         }
+
+        private void totalstockTextbox_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

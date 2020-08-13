@@ -167,11 +167,12 @@ namespace Assignment___Inventory
         }
         private void saveButton_Click(object sender, EventArgs e)
         {
+            sqlcon.Open();
             string category = "";
             if (itemComboBox.SelectedIndex >= 0)
                 category = itemComboBox.Items[itemComboBox.SelectedIndex].ToString();
-            sqlcon.Open();
-            string c = ("Insert into SaleTable values('" + category + "','" + quanTextbox.Text + "','" + brandTextbox.Text.Trim() + "', '" + catTextbox.Text + "','"+ custPriceTextbox.Text.Trim() + "',  '" + despTextbox.Text.Trim() + "',  , '"+ tpriceTextbox.Text.Trim() + "')");
+            
+            string c = ("Insert into SaleTable values('" + category + "','" + quanTextbox.Text + "','" + brandTextbox.Text.Trim() + "', '" + catTextbox.Text + "','"+ custPriceTextbox.Text.Trim() + "',  '" + despTextbox.Text.Trim() + "',   '"+ tpriceTextbox.Text.Trim() + "')");
             SqlCommand cmd = new SqlCommand(c, sqlcon);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Data successfully entered into the Database", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);

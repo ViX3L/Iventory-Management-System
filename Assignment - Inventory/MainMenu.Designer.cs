@@ -113,6 +113,7 @@
             this.totalstockTextbox.Name = "totalstockTextbox";
             this.totalstockTextbox.Size = new System.Drawing.Size(171, 27);
             this.totalstockTextbox.TabIndex = 2;
+            this.totalstockTextbox.TextChanged += new System.EventHandler(this.totalstockTextbox_TextChanged);
             // 
             // itemsoldLabel
             // 

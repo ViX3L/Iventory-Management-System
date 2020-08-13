@@ -96,10 +96,8 @@ namespace Assignment___Inventory
         {
          
                 // Update Items Code.
-                cmd = new SqlCommand("update ProductTable set Product_Name='" + additemTextbox.Text + "', Category='" + categoryComboBox.Text + "', Brand='" + brandTextbox.Text + "', Quantity='" + qtyTextbox.Text + "', Supplier_Price='" + spTextbox.Text + "', Cust_Price='" + cpTextbox.Text + "', Description='" + despTextbox.Text + "'where Product_ID='"+product_id+"' ", sqlcon);
+                cmd = new SqlCommand("update ProductTable set Product_Name='" + additemTextbox.Text + "', Category='" + categoryComboBox.Text + "', Brand='" + brandTextbox.Text + "', Quantity='" + qtyTextbox.Text + "', Supp_Price='" + spTextbox.Text + "', Cust_Price='" + cpTextbox.Text + "', Desp='" + despTextbox.Text + "' where productID='"+product_id+"' ", sqlcon);
                 sqlcon.Open();
-                
-                
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Information Updated in Database!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 sqlcon.Close();
@@ -113,7 +111,7 @@ namespace Assignment___Inventory
         {
             //Delete Items Code.
             sqlcon.Open();
-            cmd = new SqlCommand("delete from ProductTable where Product_ID='" + product_id + "'", sqlcon);
+            cmd = new SqlCommand("delete from ProductTable where productID='" + product_id + "'", sqlcon);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Information Deleted");
 
