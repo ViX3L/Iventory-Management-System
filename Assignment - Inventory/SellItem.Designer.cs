@@ -42,8 +42,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.despTextbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.warrTextbox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.saveButton = new System.Windows.Forms.Button();
             this.tpriceTextbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -91,7 +89,7 @@
             // sellButton
             // 
             this.sellButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sellButton.Location = new System.Drawing.Point(205, 449);
+            this.sellButton.Location = new System.Drawing.Point(196, 387);
             this.sellButton.Name = "sellButton";
             this.sellButton.Size = new System.Drawing.Size(104, 46);
             this.sellButton.TabIndex = 4;
@@ -103,7 +101,7 @@
             // 
             this.backButton.AutoSize = true;
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(73, 449);
+            this.backButton.Location = new System.Drawing.Point(64, 387);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(100, 46);
             this.backButton.TabIndex = 15;
@@ -183,28 +181,10 @@
             this.label4.TabIndex = 22;
             this.label4.Text = "Description: ";
             // 
-            // warrTextbox
-            // 
-            this.warrTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.warrTextbox.Location = new System.Drawing.Point(236, 311);
-            this.warrTextbox.Name = "warrTextbox";
-            this.warrTextbox.Size = new System.Drawing.Size(275, 27);
-            this.warrTextbox.TabIndex = 25;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 314);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 20);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Warranty: ";
-            // 
             // saveButton
             // 
             this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.Location = new System.Drawing.Point(341, 450);
+            this.saveButton.Location = new System.Drawing.Point(332, 388);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(145, 46);
             this.saveButton.TabIndex = 26;
@@ -215,7 +195,7 @@
             // tpriceTextbox
             // 
             this.tpriceTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tpriceTextbox.Location = new System.Drawing.Point(236, 356);
+            this.tpriceTextbox.Location = new System.Drawing.Point(236, 311);
             this.tpriceTextbox.Name = "tpriceTextbox";
             this.tpriceTextbox.Size = new System.Drawing.Size(275, 27);
             this.tpriceTextbox.TabIndex = 28;
@@ -225,7 +205,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(33, 359);
+            this.label6.Location = new System.Drawing.Point(33, 314);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 20);
             this.label6.TabIndex = 27;
@@ -236,12 +216,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(552, 527);
+            this.ClientSize = new System.Drawing.Size(552, 466);
             this.Controls.Add(this.tpriceTextbox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.saveButton);
-            this.Controls.Add(this.warrTextbox);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.despTextbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.custPriceTextbox);
@@ -281,8 +259,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox despTextbox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox warrTextbox;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.TextBox tpriceTextbox;
         private System.Windows.Forms.Label label6;

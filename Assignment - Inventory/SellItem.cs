@@ -109,7 +109,7 @@ namespace Assignment___Inventory
         private void itemComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             sqlcon.Open();
-            sda = new SqlDataAdapter("Select * from ProductTable where Product_name ='"+ itemComboBox.SelectedItem.ToString()+ "' ", sqlcon);
+            sda = new SqlDataAdapter("Select * from ProductTable where Product_Name ='"+ itemComboBox.SelectedItem.ToString()+ "' ", sqlcon);
             dtbl = new DataTable();
             sda.Fill(dtbl);
             foreach (DataRow dr in dtbl.Rows)
@@ -117,7 +117,7 @@ namespace Assignment___Inventory
                 brandTextbox.Text = dr["Brand"].ToString();
                 catTextbox.Text = dr["Category"].ToString();
                 custPriceTextbox.Text = dr["Cust_Price"].ToString();
-                despTextbox.Text = dr["Description"].ToString();
+                despTextbox.Text = dr["Desp"].ToString();
 
 
             }
@@ -131,8 +131,8 @@ namespace Assignment___Inventory
             qty = Convert.ToInt32(quanTextbox.Text.Trim().ToString());
             Convert.ToInt32(custPriceTextbox.Text.Trim().ToString());
             cmd = new SqlCommand("Select * from ProductTable get Cust_Price ='" + custPriceTextbox.Text + "' ", sqlcon);
-            cmd = new SqlCommand("Select * from  SaleTable get SalePrice= '" + custPriceTextbox.Text + "' ", sqlcon);
-            cmd = new SqlCommand("Select * from  SaleTable set SalePrice= '" + custPriceTextbox.Text + "' ", sqlcon);
+            cmd = new SqlCommand("Select * from  SaleTable get Item_Price= '" + custPriceTextbox.Text + "' ", sqlcon);
+            cmd = new SqlCommand("Select * from  SaleTable set Item_Price= '" + custPriceTextbox.Text + "' ", sqlcon);
             try
             {
                 tpriceTextbox.Text = (float.Parse(quanTextbox.Text.Trim()) * float.Parse(custPriceTextbox.Text.Trim())).ToString();
@@ -143,7 +143,7 @@ namespace Assignment___Inventory
             }
 
             //cmd = new SqlCommand("Insert SaleTable TotalPrice='" + tpriceTextbox.Text.Trim() + "' ");
-            cmd = new SqlCommand("update SaleTable set TotalPrice=" + tpriceTextbox.Text + " ", sqlcon);
+            cmd = new SqlCommand("update SaleTable set Total_Price=" + tpriceTextbox.Text + " ", sqlcon);
             
 
             sda = new SqlDataAdapter("Select * from SaleTable where qty=" + qty + " ", sqlcon);
@@ -152,7 +152,7 @@ namespace Assignment___Inventory
             foreach (DataRow dr in dtbl.Rows)
             {
                 
-                tpriceTextbox.Text = dr["TotalPrice"].ToString();
+                tpriceTextbox.Text = dr["Total_Price"].ToString();
                 
 
 
@@ -171,7 +171,7 @@ namespace Assignment___Inventory
             if (itemComboBox.SelectedIndex >= 0)
                 category = itemComboBox.Items[itemComboBox.SelectedIndex].ToString();
             sqlcon.Open();
-            string c = ("Insert into SaleTable values('" + category + "','" + quanTextbox.Text + "','" + brandTextbox.Text.Trim() + "', '" + catTextbox.Text + "','"+ custPriceTextbox.Text.Trim() + "',  '" + despTextbox.Text.Trim() + "', '" + warrTextbox.Text.Trim() + "', '"+ tpriceTextbox.Text.Trim() + "')");
+            string c = ("Insert into SaleTable values('" + category + "','" + quanTextbox.Text + "','" + brandTextbox.Text.Trim() + "', '" + catTextbox.Text + "','"+ custPriceTextbox.Text.Trim() + "',  '" + despTextbox.Text.Trim() + "',  , '"+ tpriceTextbox.Text.Trim() + "')");
             SqlCommand cmd = new SqlCommand(c, sqlcon);
             cmd.ExecuteNonQuery();
             MessageBox.Show("Data successfully entered into the Database", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
