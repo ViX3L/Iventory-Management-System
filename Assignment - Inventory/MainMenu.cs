@@ -29,7 +29,7 @@ namespace Assignment___Inventory
         private void purchaseToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
             
-            InventoryReport inv = new InventoryReport();
+            InventoryForm inv = new InventoryForm();
             inv.Show();
             this.Hide();
             

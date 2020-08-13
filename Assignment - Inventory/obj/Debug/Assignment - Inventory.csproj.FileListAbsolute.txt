@@ -71,5 +71,7 @@ C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bi
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\RdlCompile.cache
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\RdlCompile.compiled
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment - Inventory.csproj.CopyComplete
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.InventoryReport.resources
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.sellitem.resources
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.InventoryForm.resources
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\DATABASE.MDF
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\DATABASE_log.ldf

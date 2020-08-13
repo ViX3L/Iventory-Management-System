@@ -133,6 +133,9 @@ namespace Assignment___Inventory
 
         }
 
-        
+        private void dataViewAddItem_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

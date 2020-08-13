@@ -34,11 +34,8 @@
             this.sellItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.totalStockLabel = new System.Windows.Forms.Label();
-            this.totalstockTextbox = new System.Windows.Forms.TextBox();
-            this.itemsoldLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.exitButton = new System.Windows.Forms.Button();
+            this.saleReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +79,8 @@
             // reportToolStripMenuItem
             // 
             this.reportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.purchaseToolStripMenuItem});
+            this.purchaseToolStripMenuItem,
+            this.saleReportToolStripMenuItem});
             this.reportToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(73, 22);
@@ -91,47 +89,9 @@
             // purchaseToolStripMenuItem
             // 
             this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
-            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
-            this.purchaseToolStripMenuItem.Text = "Inventory";
+            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.purchaseToolStripMenuItem.Text = "Inventory Report";
             this.purchaseToolStripMenuItem.Click += new System.EventHandler(this.purchaseToolStripMenuItem_Click);
-            // 
-            // totalStockLabel
-            // 
-            this.totalStockLabel.AutoSize = true;
-            this.totalStockLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalStockLabel.Location = new System.Drawing.Point(71, 51);
-            this.totalStockLabel.Name = "totalStockLabel";
-            this.totalStockLabel.Size = new System.Drawing.Size(103, 20);
-            this.totalStockLabel.TabIndex = 1;
-            this.totalStockLabel.Text = "Total Stock: ";
-            this.totalStockLabel.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // totalstockTextbox
-            // 
-            this.totalstockTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalstockTextbox.Location = new System.Drawing.Point(202, 48);
-            this.totalstockTextbox.Name = "totalstockTextbox";
-            this.totalstockTextbox.Size = new System.Drawing.Size(171, 27);
-            this.totalstockTextbox.TabIndex = 2;
-            this.totalstockTextbox.TextChanged += new System.EventHandler(this.totalstockTextbox_TextChanged);
-            // 
-            // itemsoldLabel
-            // 
-            this.itemsoldLabel.AutoSize = true;
-            this.itemsoldLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemsoldLabel.Location = new System.Drawing.Point(38, 92);
-            this.itemsoldLabel.Name = "itemsoldLabel";
-            this.itemsoldLabel.Size = new System.Drawing.Size(136, 20);
-            this.itemsoldLabel.TabIndex = 3;
-            this.itemsoldLabel.Text = "No. of Item sold: ";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(202, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 27);
-            this.textBox1.TabIndex = 4;
             // 
             // exitButton
             // 
@@ -144,16 +104,18 @@
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // saleReportToolStripMenuItem
+            // 
+            this.saleReportToolStripMenuItem.Name = "saleReportToolStripMenuItem";
+            this.saleReportToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saleReportToolStripMenuItem.Text = "Sale Report";
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.itemsoldLabel);
-            this.Controls.Add(this.totalstockTextbox);
-            this.Controls.Add(this.totalStockLabel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
@@ -174,11 +136,8 @@
         private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem purchaseToolStripMenuItem;
-        private System.Windows.Forms.Label totalStockLabel;
-        private System.Windows.Forms.TextBox totalstockTextbox;
-        private System.Windows.Forms.Label itemsoldLabel;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.ToolStripMenuItem sellItemToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saleReportToolStripMenuItem;
     }
 }

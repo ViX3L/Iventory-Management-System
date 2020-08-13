@@ -15,7 +15,7 @@ namespace Assignment___Inventory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new adminForm());
+            Application.Run(new InventoryForm());
         }
 
         
