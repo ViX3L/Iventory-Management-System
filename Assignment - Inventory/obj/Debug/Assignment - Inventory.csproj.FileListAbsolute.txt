@@ -28,16 +28,6 @@ C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bi
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\Microsoft.MSXML.dll
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
@@ -58,6 +48,18 @@ C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bi
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment - Inventory.csproj.CopyComplete
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.sellitem.resources
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
@@ -68,10 +70,8 @@ C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bi
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.StockReport.resources
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\RdlCompile.cache
 C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\RdlCompile.compiled
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment - Inventory.csproj.CopyComplete
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.sellitem.resources
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.InventoryForm.resources
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\DATABASE.MDF
-C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\bin\Debug\DATABASE_log.ldf
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.SaleReport.resources
+C:\Users\asadu\Documents\GitHub\Assignment---Inventory\Assignment - Inventory\obj\Debug\Assignment___Inventory.TotalInventory.resources

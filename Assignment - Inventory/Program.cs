@@ -1,4 +1,4 @@
-﻿using Microsoft.ReportingServices.Diagnostics.Internal;
+﻿
 using System;
 using System.Windows.Forms;
 
@@ -15,7 +15,7 @@ namespace Assignment___Inventory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InventoryForm());
+            Application.Run(new TotalInventory());
         }
 
         

@@ -20,7 +20,7 @@ namespace Assignment___Inventory
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter sda = new SqlDataAdapter();
         DataTable dtbl = new DataTable();
-
+        int product_id;
         public sellitem()
         {
             // Connect Database to store data
@@ -28,7 +28,7 @@ namespace Assignment___Inventory
 
             InitializeComponent();
             FillitemComboBox();
-            
+            displayData();
         }
 
         void FillitemComboBox() {
@@ -67,6 +67,7 @@ namespace Assignment___Inventory
             sda = new SqlDataAdapter("Select * from ProductTable", sqlcon);
             dtbl = new DataTable();
             sda.Fill(dtbl);
+            dataViewSaleItem.DataSource = dtbl;
             sqlcon.Close();
         }
 
@@ -86,7 +87,9 @@ namespace Assignment___Inventory
 
             cmd.ExecuteNonQuery();
             MessageBox.Show("Product Sold", "Sale", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             sqlcon.Close();
+            displayData();
         }
         
 
@@ -122,7 +125,9 @@ namespace Assignment___Inventory
 
             }
             sqlcon.Close();
+            displayData();
         }
+
         private void quanTextbox_TextChanged(object sender, EventArgs e)
         {
             sqlcon.Open();
@@ -163,6 +168,7 @@ namespace Assignment___Inventory
 
             
             sqlcon.Close();
+            displayData();
             
         }
         private void saveButton_Click(object sender, EventArgs e)
@@ -177,13 +183,26 @@ namespace Assignment___Inventory
             cmd.ExecuteNonQuery();
             MessageBox.Show("Data successfully entered into the Database", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
             sqlcon.Close();
-            
+            displayData();
             
         }
 
         private void tpriceTextbox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataViewSaleItem_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Specify the Data view, to show data on Data Dashboard.
+            product_id = Convert.ToInt32(dataViewSaleItem.Rows[e.RowIndex].Cells[0].Value.ToString());
+            itemComboBox.Text = dataViewSaleItem.Rows[e.RowIndex].Cells[1].Value.ToString();
+            quanTextbox.Text = dataViewSaleItem.Rows[e.RowIndex].Cells[2].Value.ToString();
+            brandTextbox.Text = dataViewSaleItem.Rows[e.RowIndex].Cells[3].Value.ToString();
+            catTextbox.Text = dataViewSaleItem.Rows[e.RowIndex].Cells[4].Value.ToString();
+            custPriceTextbox.Text = dataViewSaleItem.Rows[e.RowIndex].Cells[5].Value.ToString();
+            despTextbox.Text = dataViewSaleItem.Rows[e.RowIndex].Cells[6].Value.ToString();
+            tpriceTextbox.Text = dataViewSaleItem.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
     }
 }
