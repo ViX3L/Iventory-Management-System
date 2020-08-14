@@ -147,7 +147,7 @@ namespace Assignment___Inventory
 
         private void totalQuantityToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Show();
+            this.Hide();
             TotalInventory ti = new TotalInventory();
             ti.Show();
         }

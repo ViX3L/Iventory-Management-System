@@ -85,12 +85,12 @@ namespace Assignment___Inventory
                 {
                     //calculate the quantity of all books
                     tot += int.Parse(dataGridView1.Rows[i].Cells["Quantity"].Value.ToString());
-                    tots += int.Parse(dataGridView1.Rows[i].Cells["Quantity"].Value.ToString()) * int.Parse(dataGridView1.Rows[i].Cells["Supp_Price"].Value.ToString());
+                    tots += int.Parse(dataGridView1.Rows[i].Cells["Quantity"].Value.ToString()) * int.Parse(dataGridView1.Rows[i].Cells["Cust_Price"].Value.ToString());
                 }
                 //adding values in the max rows of the dataGridview
                 dataGridView1.Rows[maxrow].Cells[3].Value = "Total";
                 dataGridView1.Rows[maxrow].Cells[4].Value = tot.ToString();
-                dataGridView1.Rows[maxrow].Cells[5].Value = tots.ToString();
+                dataGridView1.Rows[maxrow].Cells[6].Value = tots.ToString();
 
             }
             catch (Exception ex)

@@ -204,5 +204,10 @@ namespace Assignment___Inventory
             despTextbox.Text = dataViewSaleItem.Rows[e.RowIndex].Cells[6].Value.ToString();
             tpriceTextbox.Text = dataViewSaleItem.Rows[e.RowIndex].Cells[7].Value.ToString();
         }
+
+        private void sellitem_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

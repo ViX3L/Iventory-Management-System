@@ -254,6 +254,7 @@
             this.Name = "sellitem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sell Item";
+            this.Load += new System.EventHandler(this.sellitem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataViewSaleItem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

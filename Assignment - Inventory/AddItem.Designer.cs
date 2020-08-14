@@ -65,22 +65,22 @@
             this.additemTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.additemTextbox.Location = new System.Drawing.Point(241, 28);
             this.additemTextbox.Name = "additemTextbox";
-            this.additemTextbox.Size = new System.Drawing.Size(381, 27);
+            this.additemTextbox.Size = new System.Drawing.Size(231, 27);
             this.additemTextbox.TabIndex = 1;
             // 
             // brandTextbox
             // 
             this.brandTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brandTextbox.Location = new System.Drawing.Point(877, 86);
+            this.brandTextbox.Location = new System.Drawing.Point(721, 85);
             this.brandTextbox.Name = "brandTextbox";
-            this.brandTextbox.Size = new System.Drawing.Size(381, 27);
+            this.brandTextbox.Size = new System.Drawing.Size(264, 27);
             this.brandTextbox.TabIndex = 3;
             // 
             // brandLabel
             // 
             this.brandLabel.AutoSize = true;
             this.brandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brandLabel.Location = new System.Drawing.Point(672, 88);
+            this.brandLabel.Location = new System.Drawing.Point(516, 87);
             this.brandLabel.Name = "brandLabel";
             this.brandLabel.Size = new System.Drawing.Size(71, 20);
             this.brandLabel.TabIndex = 2;
@@ -101,16 +101,16 @@
             this.qtyTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qtyTextbox.Location = new System.Drawing.Point(241, 86);
             this.qtyTextbox.Name = "qtyTextbox";
-            this.qtyTextbox.Size = new System.Drawing.Size(381, 27);
+            this.qtyTextbox.Size = new System.Drawing.Size(231, 27);
             this.qtyTextbox.TabIndex = 5;
             this.qtyTextbox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // spTextbox
             // 
             this.spTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spTextbox.Location = new System.Drawing.Point(877, 135);
+            this.spTextbox.Location = new System.Drawing.Point(721, 134);
             this.spTextbox.Name = "spTextbox";
-            this.spTextbox.Size = new System.Drawing.Size(381, 27);
+            this.spTextbox.Size = new System.Drawing.Size(264, 27);
             this.spTextbox.TabIndex = 7;
             // 
             // spLabel
@@ -118,7 +118,7 @@
             this.spLabel.AutoSize = true;
             this.spLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.spLabel.Location = new System.Drawing.Point(672, 138);
+            this.spLabel.Location = new System.Drawing.Point(516, 137);
             this.spLabel.Name = "spLabel";
             this.spLabel.Size = new System.Drawing.Size(134, 20);
             this.spLabel.TabIndex = 6;
@@ -129,7 +129,7 @@
             this.cpTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cpTextbox.Location = new System.Drawing.Point(241, 138);
             this.cpTextbox.Name = "cpTextbox";
-            this.cpTextbox.Size = new System.Drawing.Size(381, 27);
+            this.cpTextbox.Size = new System.Drawing.Size(231, 27);
             this.cpTextbox.TabIndex = 9;
             // 
             // cpLabel
@@ -145,7 +145,7 @@
             // despTextbox
             // 
             this.despTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.despTextbox.Location = new System.Drawing.Point(1452, 33);
+            this.despTextbox.Location = new System.Drawing.Point(1149, 35);
             this.despTextbox.Multiline = true;
             this.despTextbox.Name = "despTextbox";
             this.despTextbox.Size = new System.Drawing.Size(265, 112);
@@ -155,7 +155,7 @@
             // 
             this.despLabel.AutoSize = true;
             this.despLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.despLabel.Location = new System.Drawing.Point(1321, 32);
+            this.despLabel.Location = new System.Drawing.Point(1018, 34);
             this.despLabel.Name = "despLabel";
             this.despLabel.Size = new System.Drawing.Size(112, 20);
             this.despLabel.TabIndex = 10;
@@ -164,7 +164,7 @@
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(529, 608);
+            this.addButton.Location = new System.Drawing.Point(299, 608);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(123, 52);
             this.addButton.TabIndex = 12;
@@ -179,7 +179,7 @@
             this.dataViewAddItem.Name = "dataViewAddItem";
             this.dataViewAddItem.RowHeadersWidth = 51;
             this.dataViewAddItem.RowTemplate.Height = 24;
-            this.dataViewAddItem.Size = new System.Drawing.Size(1683, 333);
+            this.dataViewAddItem.Size = new System.Drawing.Size(1393, 333);
             this.dataViewAddItem.TabIndex = 13;
             this.dataViewAddItem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataViewAddItem_CellContentClick);
             this.dataViewAddItem.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataViewAddItem_CellDoubleClick);
@@ -188,7 +188,7 @@
             // 
             this.backButton.AutoSize = true;
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(1178, 608);
+            this.backButton.Location = new System.Drawing.Point(948, 608);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(124, 52);
             this.backButton.TabIndex = 14;
@@ -200,7 +200,7 @@
             // 
             this.categoryLabel.AutoSize = true;
             this.categoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryLabel.Location = new System.Drawing.Point(672, 36);
+            this.categoryLabel.Location = new System.Drawing.Point(516, 35);
             this.categoryLabel.Name = "categoryLabel";
             this.categoryLabel.Size = new System.Drawing.Size(96, 20);
             this.categoryLabel.TabIndex = 15;
@@ -217,16 +217,16 @@
             "Keyboard",
             "Mouse",
             "Mouse Mat"});
-            this.categoryComboBox.Location = new System.Drawing.Point(877, 33);
+            this.categoryComboBox.Location = new System.Drawing.Point(721, 32);
             this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(381, 28);
+            this.categoryComboBox.Size = new System.Drawing.Size(264, 28);
             this.categoryComboBox.TabIndex = 16;
             // 
             // updateButton
             // 
             this.updateButton.AutoSize = true;
             this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateButton.Location = new System.Drawing.Point(743, 608);
+            this.updateButton.Location = new System.Drawing.Point(513, 608);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(124, 52);
             this.updateButton.TabIndex = 17;
@@ -238,7 +238,7 @@
             // 
             this.delButton.AutoSize = true;
             this.delButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delButton.Location = new System.Drawing.Point(963, 608);
+            this.delButton.Location = new System.Drawing.Point(733, 608);
             this.delButton.Name = "delButton";
             this.delButton.Size = new System.Drawing.Size(124, 52);
             this.delButton.TabIndex = 18;
@@ -251,7 +251,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(1749, 695);
+            this.ClientSize = new System.Drawing.Size(1429, 695);
             this.Controls.Add(this.delButton);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.categoryComboBox);
@@ -273,7 +273,6 @@
             this.Controls.Add(this.additemLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.MaximizeBox = false;
             this.Name = "AddItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add / Update / Delete Item";
