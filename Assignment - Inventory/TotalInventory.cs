@@ -17,8 +17,6 @@ namespace Assignment___Inventory
         {
             InitializeComponent();
         }
-        
-        
         //initializes new instance 
         SqlConnection sqlcon = new SqlConnection();
         SqlDataAdapter sda = new SqlDataAdapter();
